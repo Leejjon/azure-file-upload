@@ -8,9 +8,9 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "tfstate"
-    storage_account_name = "<storage_account_name>"
-    container_name       = "tfstate"
+    resource_group_name  = "file-upload-resources"
+    storage_account_name = "storageaccountfhrr1ya5"
+    container_name       = "file-upload-storage-container"
     key                  = "terraform.tfstate"
   }
 }
